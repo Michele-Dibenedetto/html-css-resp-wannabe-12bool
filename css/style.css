@@ -75,8 +75,8 @@ img {
 } */
 
 /* INIZIO RESPONSIVITA */
-/* responsive smartphone*/
-@media screen and (max-width: 768px) {
+/* regole generali responsive */
+@media screen and (max-width: 1200px) {
   body {
     font-size: 20px;
   }
@@ -86,30 +86,53 @@ img {
     margin: 0 auto;
   }
 
-  img {
-    padding-top: 35px;
-  }
-
-  .row {  /*regole generali per tutti i row */
+  .row {
    margin: 0 auto;
-   padding: 30px 0 30px;
   }
 
   .container {
     padding: 10px;
   }
-/* BLOCCO LEZIONI */
-  #lezioni.container,
-  #why.container {
-    background-color: #b8c0646b;
-  }
   /* BLOCCO COMMON */
-
   #why img {
     margin-top: 40px;
   }
 
   #why hr {
     border: 1px solid black;
+  }
+}
+/* responsive tablet */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .description {
+    position: relative;
+    top: 40px;
+  }
+  img {
+    float: left;
+    height: 150px;
+    width: 150px;
+  }
+/* BLOCCO LEZIONI */
+  #lezioni.container,
+  #why.container {
+    background-color: #649ec06b;
+  }
+/* BLOCCO COMMON */
+#why hr {
+  margin-top: 70px;
+}
+}
+/* responsive smartphone*/
+@media screen and (max-width: 768px) {
+
+  img {
+    padding-top: 35px;
+  }
+
+/* BLOCCO LEZIONI */
+  #lezioni.container,
+  #why.container {
+    background-color: #b8c0646b;
   }
 }
